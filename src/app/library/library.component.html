@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="m-3 text-center">
+        <form class=" form-inline" (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <div class=" form-group">
+                <input type="search" class="form-control" placeholder="Entrer  search string" ngModel name="search"
+                    required>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Search</button>
+
+        </form>
+
+    </div>
+
+</div>
