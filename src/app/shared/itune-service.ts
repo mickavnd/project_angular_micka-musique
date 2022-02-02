@@ -24,7 +24,7 @@ export class ItuneService {
             map(data => {
                 const res: any = data;
                 console.log(res.results);
-                return res.result ? res.results : [];
+                return res.results ? res.results : [];
 
             })
         ).subscribe( (music) => this.music = music);
@@ -37,10 +37,10 @@ export class ItuneService {
 
             item.artistName,
             item.artistViewUrl,
-            item.artWork30,
-            item.artWorkUrl,
-            item.artWorkUrl60,
-            item.ArtWorkUrl100,
+            item.artwork30,
+            item.artworkUrl,
+            item.artworkUrl60,
+            item.ArtworkUrl100,
             item.trackId
         );
 

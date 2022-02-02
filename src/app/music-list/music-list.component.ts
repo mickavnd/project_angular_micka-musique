@@ -9,15 +9,20 @@ import { Music } from '../shared/music';
 })
 export class MusicListComponent implements OnInit {
 
-  constructor(public ItuneService:  ItuneService) { }
+
  
   @Input()
-  public musics: Music[] | undefined;
+  public musics: Music[] | undefined 
+  
+  
+  
 
 
 
 
   ngOnInit(): void {
+    console.log(this.musics);
+    
   }
 
 }
