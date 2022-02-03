@@ -1,0 +1,49 @@
+.single-Artiste{
+     /* border: 1px solid red; */
+     height: 80vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly
+}
+
+.single-img{
+     /* border:  1px solid green; */
+     height: 40vh;
+     width: 30%;
+     display: flex;
+     justify-content: center;
+}
+
+.single-text{
+
+    /* border:  1px solid  black; */
+    height: 30vh;
+     width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+}
+
+.single-name{
+    /* border:  1px solid  black; */
+    height: 20%;
+    text-align: center;
+}
+
+.text-artiste{
+     font-size: 100%;
+}
+
+.single-music{
+    /* border:  1px solid  black; */
+    height: 20%;
+    text-align: center;
+
+}
+
+.size-img{
+
+    height: 100%;
+}
+

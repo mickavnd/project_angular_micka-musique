@@ -23,13 +23,20 @@ export class ItuneService {
         this.http.get(`${this.config.apiEndpoint}search?term=${this.query}`).pipe(
             map(data => {
                 const res: any = data;
-                console.log(res.results);
+            //   console.log(res.results);
                 return res.results ? res.results : [];
 
             })
         ).subscribe( (music) => this.music = music);
 
     }
+
+    public more_infomusicId(musicId :string){
+       return  this.http.get(`${this.config.apiEndpoint}lookup/?id=${musicId}`);
+
+    }
+
+    
 
     public bookFactory(item: any): Music {
 
